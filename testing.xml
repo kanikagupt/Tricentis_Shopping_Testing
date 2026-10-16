@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Tricentis Final Master Suite">
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+    </listeners>
+
+    <test name="Complete 50 Cases Automation">
+        <classes>
+            <class name="tests.RegisterTests"/>
+            <class name="tests.LoginTests"/>
+            <class name="tests.SearchCartTests"/>
+            <class name="tests.HomeMiscTests"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,299 @@
+<html>
+<head>
+<title>TestNG:  Complete 50 Cases Automation</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Complete 50 Cases Automation</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>34/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 16 10:17:20 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>388 seconds (388897 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.SearchCartTests.verifyCart()'><b>verifyCart</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_047, N/A, N/A, INVALIDGIFT, N/A, Fail</td>
+<td><div><pre>java.lang.AssertionError: Invalid Gift Card error missing. expected [true] but found [false]
+	at tests.SearchCartTests.verifyCart(SearchCartTests.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace850465441", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace850465441'><pre>java.lang.AssertionError: Invalid Gift Card error missing. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at tests.SearchCartTests.verifyCart(SearchCartTests.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>43</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.LoginTests.verifyLoginScenarios()'><b>verifyLoginScenarios</b><br>Test class: tests.LoginTests<br>Parameters: TC_008, unregistered@tricentis.com, password123, Fail</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTests@79defdc</td></tr>
+<tr>
+<td title='tests.SearchCartTests.verifySearch()'><b>verifySearch</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_043, Laptop, N/A, Manufacturer: Apple, Pass</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+<tr>
+<td title='tests.HomeMiscTests.verifyMiscModules()'><b>verifyMiscModules</b><br>Test class: tests.HomeMiscTests<br>Parameters: TC_022, Compare, Remove Product, Pass</td>
+<td></td>
+<td>0</td>
+<td>tests.HomeMiscTests@4e0ae11f</td></tr>
+<tr>
+<td title='tests.HomeMiscTests.verifyMiscModules()'><b>verifyMiscModules</b><br>Test class: tests.HomeMiscTests<br>Parameters: TC_025, Footer, Contact Us Link, Pass</td>
+<td></td>
+<td>0</td>
+<td>tests.HomeMiscTests@4e0ae11f</td></tr>
+<tr>
+<td title='tests.SearchCartTests.verifyCart()'><b>verifyCart</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_048, N/A, N/A, N/A, 10001, Pass</td>
+<td></td>
+<td>3</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+<tr>
+<td title='tests.SearchCartTests.verifyCart()'><b>verifyCart</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_017, 14.1-inch Laptop, 5, N/A, N/A, Pass</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+<tr>
+<td title='tests.HomeMiscTests.verifyMiscModules()'><b>verifyMiscModules</b><br>Test class: tests.HomeMiscTests<br>Parameters: TC_024, Newsletter, empty, Fail</td>
+<td></td>
+<td>1</td>
+<td>tests.HomeMiscTests@4e0ae11f</td></tr>
+<tr>
+<td title='tests.HomeMiscTests.verifyMiscModules()'><b>verifyMiscModules</b><br>Test class: tests.HomeMiscTests<br>Parameters: TC_015, Wishlist, Add Product, Pass</td>
+<td></td>
+<td>0</td>
+<td>tests.HomeMiscTests@4e0ae11f</td></tr>
+<tr>
+<td title='tests.LoginTests.verifyLoginScenarios()'><b>verifyLoginScenarios</b><br>Test class: tests.LoginTests<br>Parameters: TC_010, testuser123@tricentis.com, N/A, Pass</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTests@79defdc</td></tr>
+<tr>
+<td title='tests.SearchCartTests.verifyCart()'><b>verifyCart</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_018, 14.1-inch Laptop, 0, N/A, N/A, Fail</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+<tr>
+<td title='tests.RegisterTests.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegisterTests<br>Parameters: TC_002, Jane, Smith, invalid-email-format, password123, Fail</td>
+<td></td>
+<td>1</td>
+<td>tests.RegisterTests@6d5620ce</td></tr>
+<tr>
+<td title='tests.SearchCartTests.verifySearch()'><b>verifySearch</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_014, N/A, Grid, N/A, Pass</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+<tr>
+<td title='tests.SearchCartTests.verifyCart()'><b>verifyCart</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_049, N/A, N/A, N/A, , Fail</td>
+<td></td>
+<td>3</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+<tr>
+<td title='tests.HomeMiscTests.verifyMiscModules()'><b>verifyMiscModules</b><br>Test class: tests.HomeMiscTests<br>Parameters: TC_021, Compare, Add Product, Pass</td>
+<td></td>
+<td>0</td>
+<td>tests.HomeMiscTests@4e0ae11f</td></tr>
+<tr>
+<td title='tests.SearchCartTests.verifyCart()'><b>verifyCart</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_004, 14.1-inch Laptop, 1, N/A, N/A, Pass</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+<tr>
+<td title='tests.SearchCartTests.verifySearch()'><b>verifySearch</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_041, Computer, N/A, Category: Computers, Pass</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+<tr>
+<td title='tests.LoginTests.verifyLoginScenarios()'><b>verifyLoginScenarios</b><br>Test class: tests.LoginTests<br>Parameters: TC_006, testuser123@tricentis.com, password123, Pass</td>
+<td></td>
+<td>19</td>
+<td>tests.LoginTests@79defdc</td></tr>
+<tr>
+<td title='tests.SearchCartTests.verifySearch()'><b>verifySearch</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_044, Laptop, N/A, Price: 10 to 1000, Pass</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+<tr>
+<td title='tests.SearchCartTests.verifySearch()'><b>verifySearch</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_012, xyz123abc, N/A, N/A, Fail</td>
+<td></td>
+<td>1</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+<tr>
+<td title='tests.HomeMiscTests.verifyMiscModules()'><b>verifyMiscModules</b><br>Test class: tests.HomeMiscTests<br>Parameters: TC_016, Wishlist, Remove Product, Pass</td>
+<td></td>
+<td>0</td>
+<td>tests.HomeMiscTests@4e0ae11f</td></tr>
+<tr>
+<td title='tests.HomeMiscTests.verifyMiscModules()'><b>verifyMiscModules</b><br>Test class: tests.HomeMiscTests<br>Parameters: TC_023, Newsletter, valid_news@tricentis.com, Pass</td>
+<td></td>
+<td>1</td>
+<td>tests.HomeMiscTests@4e0ae11f</td></tr>
+<tr>
+<td title='tests.SearchCartTests.verifyCart()'><b>verifyCart</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_046, N/A, N/A, VALIDGIFT10, N/A, Pass</td>
+<td></td>
+<td>14</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+<tr>
+<td title='tests.SearchCartTests.verifyCart()'><b>verifyCart</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_050, N/A, N/A, N/A, N/A, Pass</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+<tr>
+<td title='tests.RegisterTests.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegisterTests<br>Parameters: TC_001, John, Doe, johndoe123@tricentis.com, password123, Pass</td>
+<td></td>
+<td>5</td>
+<td>tests.RegisterTests@6d5620ce</td></tr>
+<tr>
+<td title='tests.LoginTests.verifyLoginScenarios()'><b>verifyLoginScenarios</b><br>Test class: tests.LoginTests<br>Parameters: TC_009, testuser123@tricentis.com, password123, Pass</td>
+<td></td>
+<td>23</td>
+<td>tests.LoginTests@79defdc</td></tr>
+<tr>
+<td title='tests.LoginTests.verifyLoginScenarios()'><b>verifyLoginScenarios</b><br>Test class: tests.LoginTests<br>Parameters: TC_007, testuser123@tricentis.com, wrongpass, Fail</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTests@79defdc</td></tr>
+<tr>
+<td title='tests.SearchCartTests.verifySearch()'><b>verifySearch</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_011, Laptop, N/A, N/A, Pass</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+<tr>
+<td title='tests.RegisterTests.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegisterTests<br>Parameters: TC_005, Alice, Alias, alice+1@tricentis.com, password123, Fail</td>
+<td></td>
+<td>2</td>
+<td>tests.RegisterTests@6d5620ce</td></tr>
+<tr>
+<td title='tests.SearchCartTests.verifySearch()'><b>verifySearch</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_045, Laptop, N/A, Price: 1000 to 10, Fail</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+<tr>
+<td title='tests.SearchCartTests.verifySearch()'><b>verifySearch</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_019, , N/A, N/A, Fail</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+<tr>
+<td title='tests.SearchCartTests.verifySearch()'><b>verifySearch</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_013, N/A, Price: Low to High, N/A, Pass</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+<tr>
+<td title='tests.SearchCartTests.verifySearch()'><b>verifySearch</b><br>Test class: tests.SearchCartTests<br>Parameters: TC_042, Software, N/A, Search Subcategories: True, Pass</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchCartTests@18317edc</td></tr>
+<tr>
+<td title='tests.HomeMiscTests.verifyMiscModules()'><b>verifyMiscModules</b><br>Test class: tests.HomeMiscTests<br>Parameters: TC_020, Navigation, Top Menu - Computers, Pass</td>
+<td></td>
+<td>0</td>
+<td>tests.HomeMiscTests@4e0ae11f</td></tr>
+<tr>
+<td title='tests.RegisterTests.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegisterTests<br>Parameters: TC_003, Bob, Short, bobshort@tricentis.com, 1234, Fail</td>
+<td></td>
+<td>1</td>
+<td>tests.RegisterTests@6d5620ce</td></tr>
+</table><p>
+</body>
+</html>
