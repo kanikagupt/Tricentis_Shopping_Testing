@@ -5,6 +5,7 @@ This repository contains the testing project for the Tricentis Shopping Website.
 The primary objective of this project is to ensure the quality, functionality, reliability, and user experience of the shopping website through comprehensive testing.
 
 👥 Team Members & Responsibilities
+
 Home Page Module
 -Kanika
 -Kunisha
